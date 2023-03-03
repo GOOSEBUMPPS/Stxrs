@@ -2179,22 +2179,22 @@ do
 		Tab:AddLabel("Hello World!")
 
 		Tab:AddButton("Button", function()
-			print("Button clicked.")
+			
 		end)
 
 		Tab:AddTextBox("TextBox", function(text)
-			print(text)
+			
 		end, {
 			["clear"] = false, 
 		})
 
 		local Switch = Tab:AddSwitch("Switch", function(bool)
-			print(bool)
+			
 		end)
 		Switch:Set(true)
 
 		local Slider = Tab:AddSlider("Slider", function(x)
-			print(x)
+			
 		end, {
 			["min"] = 0, 
 			["max"] = 100, 
@@ -2203,13 +2203,13 @@ do
 		Slider:Set(50)
 
 		Tab:AddKeybind("Keybind", function(key)
-			print(key)
+			
 		end, { 
 			["standard"] = Enum.KeyCode.RightShift 
 		})
 
 		local Dropdown = Tab:AddDropdown("Dropdown", function(object)
-			print(object)
+			
 		end)
 		for i = 1, 9 do
 			Dropdown:Add(tostring(i))
@@ -2218,7 +2218,7 @@ do
 		obj:Remove()
 
 		local CP = Tab:AddColorPicker(function(color)
-			print(color)
+			
 		end)
 		CP:Set(Color3.new(1, 0, 0))
 
@@ -2226,7 +2226,7 @@ do
 			["y"] = 100,
 			["source"] = "Lua",
 		})
-		Console:Set("-- Gamer time!\nfor i = 1, 9 do \n    print(i)\nend")
+		Console:Set("The Best Script!!")
 		print(Console:Get())
 
 		local HA = Tab:AddHorizontalAlignment()
