@@ -150,7 +150,7 @@ local user_premium__001 = game.Players.W5txr --\\ Replace "User101" with your us
 local ui_options = {
 	main_color = Color3.fromRGB(255, 0, 0),
 	min_size = Vector2.new(400, 300),
-	toggle_key = Enum.KeyCode.V,
+	toggle_key = Enum.KeyCode.RightShift,
 	can_resize = true,
 }
 
